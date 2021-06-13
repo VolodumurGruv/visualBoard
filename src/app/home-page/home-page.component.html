@@ -1,0 +1,46 @@
+<div class="main-box">
+  <div class="drag-box img1" cdkDrag></div>
+  <div class="drag-box img2" cdkDrag></div>
+  <div class="drag-box img3" cdkDrag></div>
+  <div class="drag-box img4" cdkDrag></div>
+  <div class="drag-box img5" cdkDrag></div>
+  <div class="drag-box img6" cdkDrag></div>
+  <div class="drag-box img7" cdkDrag></div>
+
+  <div class="drag-box" cdkDrag>
+    <div>
+      <form action="#">
+        <input
+          [accept]="requiredFileType"
+          type="file"
+          class="file-input"
+          (change)="onFileSelected($event)"
+          #fileUpload
+          multiple
+        />
+      </form>
+      <div class="file-upload">
+        {{ fileName || "No file uploaded yet" }}
+      </div>
+      <button mat-mini-fab color="primary" (click)="fileUpload.click()">
+        <mat-icon>attach_file</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="progress">
+  <mat-progress-bar
+    class="progress-bar"
+    mode="determinate"
+    [value]="uploadProgress"
+    *ngIf="uploadProgress"
+  >
+  </mat-progress-bar>
+
+  <mat-icon
+    class="cancel-upload"
+    (click)="cancelUpload()"
+    *ngIf="uploadProgress"
+    >delete_forever</mat-icon
+  >
+</div>

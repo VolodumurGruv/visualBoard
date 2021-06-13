@@ -1,0 +1,62 @@
+.main-box {
+  width: 100%;
+  height: 100%;
+  border: 2px dotted grey;
+}
+
+.drag-box {
+  cursor: move;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.file-input {
+  display: none;
+}
+
+.img1 {
+  background-image: url("../pics/1-7.jpg");
+}
+
+.img2 {
+  background-image: url("../pics/b7793ed298.png");
+}
+
+.img3 {
+  background-image: url("../pics/black-silhouettes-lovers-couple-ilhouettes-couples-kissing-picture-taken-sea-summer-dramatic-sunset-sun-85896453.jpg");
+}
+
+.img4 {
+  background-image: url("../pics/lovers-855543.jpg");
+}
+.img5 {
+  background-image: url("../pics/nodejs-header.jpg");
+}
+
+.img6 {
+  background-image: url("../pics/photo-1585076641399-5c06d1b3365f.jpeg");
+}
+
+.img7 {
+  background-image: url("../pics/young-lovers-couple-sail-boat-champagne-sunset-exclusive-luxury-concept-rich-millennial-people-lifestyle-tour-around-138081407.jpg");
+}
+
+.img8 {
+  background-image: url("../pics/young-lovers-couple-sail-boat-champagne-sunset-exclusive-luxury-concept-rich-millennial-people-lifestyle-tour-around-138081407\ \(1\).jpg");
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8 {
+  background-size: contain;
+  width: 350px;
+  height: 250px;
+  border: 1px dotted grey;
+}
