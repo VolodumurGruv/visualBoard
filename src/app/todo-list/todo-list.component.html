@@ -1,5 +1,10 @@
 <div class="input-todo">
-  <input type="text" [formControl]="todos" (keyup.enter)="onEnter()" />
+  <form [formGroup]="todos" (ngSubmit)="addNewTodo()">
+    <input type="text" formControlName="title" required />
+    <div>
+      <button mat-button type="submit">Submit</button>
+    </div>
+  </form>
 </div>
 
 <div class="example-container">

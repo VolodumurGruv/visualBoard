@@ -17,6 +17,7 @@ import { PurposeComponent } from './shared/purpose/purpose.component';
 import { MatCardModule } from '@angular/material/card';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    SharedModule,
     BrowserAnimationsModule,
     DragDropModule,
     MatIconModule,
